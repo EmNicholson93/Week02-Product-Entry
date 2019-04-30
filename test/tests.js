@@ -30,3 +30,26 @@ test('Test ability to test for a function', assert => {
     assert.deepEqual(result, expected);
 
 });
+
+const productAppApi = {
+    save(productApp) {
+        const json = JSON.stringify(productApp);
+        localStorage.setItem('productApp', json);
+    },
+    get() {
+        const json = localStorage.getItem('productApp');
+        const productApp = JSON.parse(json);
+
+        return productApp;
+    }
+}
+
+test('round trip the product app data', assert => {
+    //arrange
+    const productApp = { name: 'seal' };
+    //act
+    productAppApi.save(productApp);
+    const result = productAppApi.get();
+    //assert
+    assert.deepEqual(result, productApp);
+});
