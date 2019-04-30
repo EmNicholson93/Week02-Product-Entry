@@ -1,9 +1,20 @@
 body {
     text-align: center;
-    color: blue;
-  font-size: 20px;
-    margin: 60px;
+    color: rgb(0, 0, 0);
+    background-image: url('../Assets/Onesie-Party-Confetti.jpg');
+    font-size: 22px;
 }
-fieldset{
-    border: turquoise 4px solid;
+fieldset, input, textarea {
+    display: inline;
+}
+form {
+  background-color: rgba(81, 204, 235, 0.562);
+  width: 600px;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+h1 {
+  color: turquoise;
+  text-decoration: underline;
 }
