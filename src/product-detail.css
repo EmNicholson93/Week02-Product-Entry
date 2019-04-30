@@ -1,0 +1,27 @@
+body {
+    text-align: left;
+    background-color:  rgb(82, 192, 255);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+
+dt {
+    background-color: rgba(215, 83, 248, 0.637);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgba(215, 83, 248, 0.637);    
+    font-style: italic;
+    color: olive;
+}
