@@ -12,22 +12,22 @@
     <form id="onesie-design">
         <p>
             <label for="name">Name your onesie:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
         </p>
         <p>
             <label for="color">What color&#40;s&#41; would you use to describe your onesie:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="color" id="color" required>
         </p>
         <p>
             <label for="description">Describe your onesie design in detail:</label>
-            <textarea name="description" id="description"></textarea>
+            <textarea name="description" id="description" required></textarea>
         </p>
         <section>
             <label for="catergory">
                 Catergory
             </label>
-            <select>
-                <option value="" hidden disbled selected>What material is your onesie made out of?</option>
+            <select id="category" name="category" required>
+                <option value="" hidden disbled selected required>What material is your onesie made out of?</option>
                     <option>Fleece</option>
                     <option>Wool</option>
                     <option>Cotton</option>
@@ -44,14 +44,14 @@
                 <legend>
                     Does your onesie have a hood?
                 </legend>
-                <input type="radio" value="yes" name="hooded" id="hooded">
-                <label for="hooded">Hooded</label>
-                <input type="radio" value="no" name="hooded" id="no-hood">
-                <label for="hooded">Not hooded</label>
+                <input type="radio" value="yes" name="hooded" id="hooded" required>
+                <label for="hooded">no</label>
+                <input type="radio" value="no" name="hooded" id="not-hooded" required>
+                <label for="not-hooded">yes</label>
             </fieldset>
         </section>
         <section>
-            <fieldset id="descriptors">
+            <fieldset>
                 <legend>
                     Additional description terms:
                 </legend>
@@ -101,8 +101,11 @@
                     </div>
             </fieldset>
         </section>
-        <button>Submit</button>
+        <section>
+            <label>Submit you onesie for sale!</label>
+            <button>Submit</button>
+        </section>
     </form>
-    <script type="module" src="./src/product-app.js"></script>
+    <script type="module" src="./src/apply.js"></script>
 </body>
 </html>
