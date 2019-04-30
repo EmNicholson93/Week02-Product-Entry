@@ -27,12 +27,17 @@
                 Catergory
             </label>
             <select>
-                <option value="" hidden disbled selected>Select a catergory:</option>
-                    <option>Animal</option>
-                    <option>Mythical creature</option>
-                    <option>Videogame character</option>
-                    <option>other</option>
+                <option value="" hidden disbled selected>What material is your onesie made out of?</option>
+                    <option>Fleece</option>
+                    <option>Wool</option>
+                    <option>Cotton</option>
+                    <option>Polyester</option>
+                    <option>Silk</option>
             </select>
+        </section>
+        <section>
+            <label for="softness">On a scale of 1 to 5, how soft is the onesie?</label>
+            <input type="range" name="softness" id="softness" min="1" max="5">
         </section>
         <section>
             <fieldset>
@@ -46,11 +51,54 @@
             </fieldset>
         </section>
         <section>
-            <fieldset>
+            <fieldset id="descriptors">
                 <legend>
-                    Other 
+                    Additional description terms:
                 </legend>
-                
+                    <div>
+                        <input type="checkbox" name="descriptors" id="tail">
+                        <label for="tail">tail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="horns">
+                        <label for="horns">horn&#40;s&#41;</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="rearRelief">
+                        <label for="rearRelief">rear relief flap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="eyes">
+                        <label for="eyes">eyes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="zipper">
+                        <label for="zipper">zipper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="buttons">
+                        <label for="buttons">buttons</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="mitts">
+                        <label for="mitts">hand mitts</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="frontRelief">
+                        <label for="frontRelief">front relief</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="ears">
+                        <label for="ears">ears</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="feet">
+                        <label for="feet">footies</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="pockets">
+                        <label for="pockets">pocket&#40;s&#41;</label>
+                    </div>
             </fieldset>
         </section>
     </form>
