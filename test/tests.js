@@ -1,2 +1,2 @@
-import './product-app.test.js';
-import './product-api.test.js';
+import './get-application-app.test.js';
+import './applicant-api.test.js';

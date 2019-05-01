@@ -1,4 +1,4 @@
-function productApp(formData) {
+function getApplicantion(formData) {
     const hood = formData.get('hooded') === 'no';
     const soft = parseInt(formData.get('softness'));
 
@@ -14,4 +14,4 @@ function productApp(formData) {
     return application;
 }
 
-export default productApp;
+export default getApplicantion;
