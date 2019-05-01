@@ -1,13 +1,23 @@
 const productApi = {
-    save(product) {
-        const json = JSON.stringify(product);
-        localStorage.setItem('product', json);
+    save(products) {
+        const json = JSON.stringify(products);
+        localStorage.setItem('products', json);
     },
     get() {
-        const json = localStorage.getItem('product');
-        const product = JSON.parse(json);
+        const json = localStorage.getItem('products');
+        const products = JSON.parse(json);
 
-        return product;
+        return products;
+    },
+    getAll() {
+        const json = localStorage.getItem('products');
+
+        let products = JSON.parse(json);
+        if(!products) {
+            products = [];
+        }
+
+        return products;
     }
 };
 
