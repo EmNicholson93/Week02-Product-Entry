@@ -28,4 +28,4 @@ if(applicant.hooded) {
     hooded.textContent = '';
 }
 
-descriptors.textContent = applicant.transport.join(', ');
+descriptors.textContent = applicant.descriptors.join(', ');
