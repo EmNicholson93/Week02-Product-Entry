@@ -1,7 +1,7 @@
-import getApplication from '../src/get-application.js';
+import getProduct from '../src/get-product.js';
 
 const test = QUnit.test;
-QUnit.module('get application');
+QUnit.module('get product');
 
 test('Test ability to test for a function', assert => {
     //arrange
@@ -27,7 +27,7 @@ test('Test ability to test for a function', assert => {
     formData.append('descriptors', expected.descriptors[1]);
     
 
-    const result = getApplication(formData);
+    const result = getProduct(formData);
     //assert
     assert.deepEqual(result, expected);
     

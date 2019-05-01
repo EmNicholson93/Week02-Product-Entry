@@ -1,8 +1,8 @@
-function getApplication(formData) {
+function getProduct(formData) {
     const hood = formData.get('hooded') === 'no';
     const soft = parseInt(formData.get('softness'));
 
-    const application = {
+    const product = {
         name: formData.get('name'),
         description: formData.get('description'),
         color: formData.get('color'),
@@ -11,7 +11,7 @@ function getApplication(formData) {
         hooded: hood,
         descriptors: formData.getAll('descriptors'),
     };
-    return application;
+    return product;
 }
 
-export default getApplication;
+export default getProduct;
