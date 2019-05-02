@@ -2,19 +2,26 @@
 
 h1 {
     font-family: 'Gugi', Sans;
-};
+}
 
 body {
-    font-family: 'ZCOOL Kuaile', sans-serif;
+    font-family: 'Gugi', sans-serif;
     text-align: center;
+    color: aqua;
+    background-image: url('../Assets/Onesie-Party-Confetti.jpg');
+    font-size: 22px;
+}
+
+h2 {
+    color: bisque;
 }
 
 button {
     padding: 5px;
-    margin: 10px;
-    text-align: center;
-}
+    display: block;
+    margin: 15px auto;
+  }
 
 button:hover {
-    box-shadow: 2px 2px 10px aqua;
+    box-shadow: 0px 0px 15px aqua;
 }

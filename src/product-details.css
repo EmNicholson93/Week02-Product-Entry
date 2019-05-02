@@ -19,10 +19,13 @@ dt {
     background-color: rgba(215, 83, 248, 0.637);
 }
 
+dd {
+    background-color: rgba(0, 255, 255, 0.637);
+}
+
 h1 {
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: rgba(215, 83, 248, 0.637);    
+    text-decoration: underline;   
     font-style: italic;
-    color: olive;
+    color: rgb(215, 83, 248);
 }
