@@ -3,8 +3,11 @@ import productApi from '../src/product-api.js';
 const test = QUnit.test;
 QUnit.module('product api');
 
+productApi.storage = sessionStorage;
+const testStorage = sessionStorage;
+
 test('round trip the product app data', assert => {
-    localStorage.removeItem('products');
+    testStorage.removeItem('products');
     //arrange
     const product = { name: 'seal' };
     //act
@@ -16,7 +19,7 @@ test('round trip the product app data', assert => {
 
 test('return an empty array if there are no products', assert => {
     //arrange
-    localStorage.removeItem('products');
+    testStorage.removeItem('products');
     const expected = [];
     //act
     const products = productApi.getAll();
@@ -26,7 +29,7 @@ test('return an empty array if there are no products', assert => {
 
 test('if 2 products are added getAll returns array of products', assert => {
     //arrange
-    localStorage.removeItem('products');
+    testStorage.removeItem('products');
     const product1 = { name: 'Lion' };
     const product2 = { name: 'Seal' };
     productApi.save(product1);
