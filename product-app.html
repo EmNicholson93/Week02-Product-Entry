@@ -4,9 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/product-app.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Submit your onesie design information!</h1>
+    <form id="onesie-design">
+        <p>
+            <label for="name">Name your onesie:</label>
+            <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+            <label for="color">What color&#40;s&#41; would you use to describe your onesie:</label>
+            <input type="text" name="color" id="color" required>
+        </p>
+        <p>
+            <label for="description">Describe your onesie design in detail:</label>
+            <textarea name="description" id="description" required></textarea>
+        </p>
+        <section>
+            <label for="catergory">
+                Catergory
+            </label>
+            <select id="category" name="category" required>
+                <option value="" hidden disbled selected required>What material is your onesie made out of?</option>
+                    <option>Fleece</option>
+                    <option>Wool</option>
+                    <option>Cotton</option>
+                    <option>Polyester</option>
+                    <option>Silk</option>
+            </select>
+        </section>
+        <section>
+            <label for="softness">On a scale of 1 to 5, how soft is the onesie?</label>
+            <input type="range" name="softness" id="softness" min="1" max="5">
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    Does your onesie have a hood?
+                </legend>
+                <input type="radio" value="yes" name="hooded" id="hooded" required>
+                <label for="hooded">no</label>
+                <input type="radio" value="no" name="hooded" id="not-hooded" required>
+                <label for="not-hooded">yes</label>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    Additional description terms:
+                </legend>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="tail">
+                        <label for="tail">tail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="horns">
+                        <label for="horns">horn&#40;s&#41;</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="rearRelief">
+                        <label for="rearRelief">rear relief flap</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="eyes">
+                        <label for="eyes">eyes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="zipper">
+                        <label for="zipper">zipper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="buttons">
+                        <label for="buttons">buttons</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="mitts">
+                        <label for="mitts">hand mitts</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="frontRelief">
+                        <label for="frontRelief">front relief</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="ears">
+                        <label for="ears">ears</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="feet">
+                        <label for="feet">footies</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="descriptors" id="pockets">
+                        <label for="pockets">pocket&#40;s&#41;</label>
+                    </div>
+            </fieldset>
+        </section>
+        <section>
+            <label>Submit you onesie for sale!</label>
+            <button>Submit</button>
+        </section>
+    </form>
+    <script type="module" src="./src/apply.js"></script>
 </body>
 </html>
