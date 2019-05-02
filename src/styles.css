@@ -6,11 +6,13 @@ h1 {
 
 body {
     font-family: 'ZCOOL Kuaile', sans-serif;
+    text-align: center;
 }
 
 button {
     padding: 5px;
     margin: 10px;
+    text-align: center;
 }
 
 button:hover {
