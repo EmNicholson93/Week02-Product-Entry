@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi|ZCOOL+KuaiLe');
+
+h1 {
+    font-family: 'Gugi', Sans;
+};
+
 body {
-    text-align: center;
+    font-family: 'ZCOOL Kuaile', sans-serif;
 }

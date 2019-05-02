@@ -1,3 +1,25 @@
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 3em;
+    font-family: 'ZCOOL Kuaile', sans-serif;
+}
+thead {
+    font-weight: bolder;
+    color: rgb(255, 238, 0);
+    background: #EB4D5C;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 5px 10px;
+}
+
 body {
     text-align: center;
     color: rgb(0, 0, 0);
