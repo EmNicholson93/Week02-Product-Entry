@@ -1,5 +1,7 @@
 const productApi = {
-    save(products) {
+    save(product) {
+        const products = productApi.getAll();
+        products.push(product);
         const json = JSON.stringify(products);
         localStorage.setItem('products', json);
     },
@@ -7,7 +9,7 @@ const productApi = {
         const json = localStorage.getItem('products');
         const products = JSON.parse(json);
 
-        return products;
+        return products[0];
     },
     getAll() {
         const json = localStorage.getItem('products');
