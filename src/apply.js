@@ -7,4 +7,5 @@ form.addEventListener('submit', event => {
     const formData = new FormData(form);
     const product = getProduct(formData);
     productApi.save(product);
+    window.location = '../thank-you.html';
 });

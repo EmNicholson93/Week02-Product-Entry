@@ -5,6 +5,8 @@ table {
     border-collapse: collapse;
     border-spacing: 3em;
     font-family: 'ZCOOL Kuaile', sans-serif;
+    background-color: rgba(81, 204, 235, 0.562);
+    border-radius: 1%;
 }
 thead {
     font-weight: bolder;
@@ -26,15 +28,6 @@ body {
     background-image: url('../Assets/Onesie-Party-Confetti.jpg');
     font-size: 22px;
     font-family: 'ZCOOL Kuaile', sans-serif;
-}
-fieldset, input, textarea {
-    display: inline;
-}
-form {
-  background-color: rgba(81, 204, 235, 0.562);
-  width: 600px;
-  display: inline-block;
-  border-radius: 10%;
 }
 
 h1 {
