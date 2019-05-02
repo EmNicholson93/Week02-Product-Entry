@@ -11,7 +11,6 @@ test('Test ability to test for a function', assert => {
         softness: 4,
         hooded: true,
         descriptors: ['tail', 'zipper'],
-        
     };
 //act
     const formData = new FormData();
