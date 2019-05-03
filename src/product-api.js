@@ -1,10 +1,10 @@
 const productApi = {
-    storage: localStorage,
+    key: 'products',
     save(product) {
         const products = productApi.getAll();
         products.push(product);
         const json = JSON.stringify(products);
-        productApi.storage.setItem('products', json);
+        localStorage.setItem(productApi.key, json);
     },
     get(name) {
         const products = productApi.getAll();
@@ -17,7 +17,7 @@ const productApi = {
         }
     },
     getAll() {
-        const json = productApi.storage.getItem('products');
+        const json = localStorage.getItem(productApi.key);
 
         let products = JSON.parse(json);
         if(!products) {
