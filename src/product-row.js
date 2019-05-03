@@ -22,7 +22,7 @@ function makeListCell(list) {
         stringFromList = list.join(', ');
     }
     const listCell = makeTextCell(stringFromList);
-    return textCell;
+    return listCell;
 }
 
 function makeTextCell(text) {

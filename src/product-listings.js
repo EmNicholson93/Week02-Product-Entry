@@ -14,7 +14,7 @@ for(let i = 0; i < products.length; i++) {
     const categoryCell = productRow.makeTextCell(product.category);
     const softnessCell = productRow.makeTextCell(product.softness);
     const hoodedCell = productRow.makeTextCell(productRow.boolConversion(product.hooded));
-    const descriptorsCell = products.makeListCell(productRow.descriptors);
+    const descriptorsCell = productRow.makeListCell(productRow.descriptors);
     
     tr.appendChild(nameCell);
     tr.appendChild(colorCell);
