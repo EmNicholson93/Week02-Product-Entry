@@ -8,7 +8,12 @@ for(let i = 0; i < products.length; i++) {
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');
-    nameCell.textContent = product.name;
+    const link = document.createElement('a');
+    const searchParams = new URLSearchParams();
+    searchParams.set('name', product.name);
+    link.href = 'product-details.html?' + searchParams.toString();
+    link.textContent = product.name;
+    nameCell.appendChild(nameCell);
     tr.appendChild(nameCell);
 
     const colorCell = document.createElement('td');
