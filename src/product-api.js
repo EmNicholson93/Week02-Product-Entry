@@ -6,11 +6,15 @@ const productApi = {
         const json = JSON.stringify(products);
         productApi.storage.setItem('products', json);
     },
-    get() {
-        const json = productApi.storage.getItem('products');
-        const products = JSON.parse(json);
+    get(name) {
+        const products = productApi.getAll();
 
-        return products[0];
+        for(let i = 0; i < products.length; i++) {
+            const product = products[i];
+            if(product.name === name) {
+                return product;
+            }
+        }
     },
     getAll() {
         const json = productApi.storage.getItem('products');

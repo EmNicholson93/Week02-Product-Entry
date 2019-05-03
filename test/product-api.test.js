@@ -6,15 +6,17 @@ QUnit.module('product api');
 productApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
-test('round trip the product app data', assert => {
+test('store 2 products and return the second one', assert => {
     testStorage.removeItem('products');
     //arrange
-    const product = { name: 'seal' };
+    const product1 = { name: 'product1' };
+    const product2 = { name: 'product2' };
     //act
-    productApi.save(product);
-    const result = productApi.get();
+    productApi.save(product1);
+    productApi.save(product2);
+    const result = productApi.get(product2.name);
     //assert
-    assert.deepEqual(result, product);
+    assert.deepEqual(result, product2);
 });
 
 test('return an empty array if there are no products', assert => {
