@@ -3,6 +3,7 @@ body {
     color: rgb(0, 0, 0);
     background-image: url('../Assets/Onesie-Party-Confetti.jpg');
     font-size: 22px;
+    font-family: 'ZCOOL Kuaile', sans-serif;
 }
 fieldset, input, textarea {
     display: inline;
