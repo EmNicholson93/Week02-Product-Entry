@@ -8,7 +8,10 @@ const softness = document.getElementById('softness');
 const hooded = document.getElementById('hooded');
 const descriptors = document.getElementById('descriptors');
 
-const product = productApi.get();
+const searchParams = new URLSearchParams(window.location.search);
+const productName = searchParams.get('name');
+
+const product = productApi.get(productName);
 
 // if(!product) {
 //     window.location = './';

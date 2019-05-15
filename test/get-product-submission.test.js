@@ -12,8 +12,7 @@ test('Test ability to test for a function', assert => {
         category: 'Fleece',
         softness: 4,
         hooded: true,
-        descriptors: ['tail', 'zipper'],
-        
+        descriptors: ['tail', 'zipper']
     };
     //act
     const formData = new FormData();
